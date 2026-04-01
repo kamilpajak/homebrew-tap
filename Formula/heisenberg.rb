@@ -5,21 +5,21 @@
 class Heisenberg < Formula
   desc "AI-powered test failure analysis for GitHub repositories"
   homepage "https://github.com/kamilpajak/heisenberg"
-  version "0.3.1"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kamilpajak/heisenberg/releases/download/v0.3.1/heisenberg_0.3.1_darwin_x86_64.tar.gz"
-      sha256 "a8711360a2fcd6f83c953f48b454800d8f4799fb23ba349378ec94399f772967"
+      url "https://github.com/kamilpajak/heisenberg/releases/download/v0.4.0/heisenberg_0.4.0_darwin_x86_64.tar.gz"
+      sha256 "0c9f23da949eec093287633b52603b28a74b0e9adb853ffcf2c3dc6c070652ea"
 
       define_method(:install) do
         bin.install "heisenberg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kamilpajak/heisenberg/releases/download/v0.3.1/heisenberg_0.3.1_darwin_arm64.tar.gz"
-      sha256 "351f2259b884e1c0163c94846bfe73ec5a8bb12ee1e63196c0a5469bab2bbc6e"
+      url "https://github.com/kamilpajak/heisenberg/releases/download/v0.4.0/heisenberg_0.4.0_darwin_arm64.tar.gz"
+      sha256 "f21bf7ed32b46e45a41cf97289419114134bf6304d8f877d9b676ce6f273d78a"
 
       define_method(:install) do
         bin.install "heisenberg"
@@ -29,15 +29,15 @@ class Heisenberg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kamilpajak/heisenberg/releases/download/v0.3.1/heisenberg_0.3.1_linux_x86_64.tar.gz"
-      sha256 "690c2af018e431e99015cfaa1e577b889eadbde679d9a5f6fd4ffa1d8e625fc8"
+      url "https://github.com/kamilpajak/heisenberg/releases/download/v0.4.0/heisenberg_0.4.0_linux_x86_64.tar.gz"
+      sha256 "7fcace354d7592c5c5f2188440760c85945eb9b4e94b1bbd3507035b692ab818"
       define_method(:install) do
         bin.install "heisenberg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kamilpajak/heisenberg/releases/download/v0.3.1/heisenberg_0.3.1_linux_arm64.tar.gz"
-      sha256 "ba63ff8e329e52a153ce7cfc33ff7d6725c28c4324c85130ad576e0276d706f8"
+      url "https://github.com/kamilpajak/heisenberg/releases/download/v0.4.0/heisenberg_0.4.0_linux_arm64.tar.gz"
+      sha256 "3b31b47227d1f2b615aede23d02c2a5d180f1bab932e8cd292b8fb44fd7dc1db"
       define_method(:install) do
         bin.install "heisenberg"
       end
